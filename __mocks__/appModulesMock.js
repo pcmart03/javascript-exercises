@@ -1,6 +1,5 @@
-import moduleBase from '../src/js/app-module-base/app-module-base';
+import helloWorld from '../src/js/hello-world-module/hello-world-module';
 
 export default [
-  new moduleBase.AppModuleBase('test_1'),
-  new moduleBase.AppModuleBase('test_2'),
+  helloWorld.getHelloWorldModule(),
 ];

@@ -1,6 +1,9 @@
 import base from '../app-module-base/app-module-base';
 import utils from '../utils/utils';
 
+/**
+ * The classic starter. It displays "Hello, World!"
+ * */
 class HelloWorldModule extends base.AppModuleBase {
   domUtils = utils.domUtils;
 
@@ -15,4 +18,11 @@ class HelloWorldModule extends base.AppModuleBase {
   }
 }
 
-export default { HelloWorldModule };
+function getHelloWorldModule() {
+  return new HelloWorldModule();
+}
+
+export default {
+  HelloWorldModule,
+  getHelloWorldModule,
+};

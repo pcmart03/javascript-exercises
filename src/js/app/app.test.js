@@ -4,8 +4,9 @@ import constants from '../constants/constants';
 
 describe('App', () => {
   let app;
+  const mockElement = document.createElement('div');
   beforeEach(() => {
-    app = new appMod.App(mockModules);
+    app = new appMod.App(mockElement, mockModules);
   });
 
   test('should create', () => {
@@ -23,7 +24,7 @@ describe('App', () => {
 
     test('it should set the displaywindow classlist', () => {
       const { displayWindow } = app;
-      expect(displayWindow.className).toEqual(constants.DISPLAY_CLASS_LIST.toString());
+      expect(displayWindow.className).toEqual(constants.DISPLAY_CLASS_LIST.join(' '));
     });
   });
 

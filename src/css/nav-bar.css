@@ -1,0 +1,53 @@
+/* --rich-black-fogra-29: #0c1618ff
+
+;
+--pine-green: #007A74
+
+;
+--cornsilk: #faf4d3ff
+
+;
+--old-lavender: #896978ff
+
+;
+--capri: #48beffff
+
+; */
+
+.app-tab-ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.app-tab-li {
+    flex: 0 0 5em;
+    border: 1px solid black;
+    border-bottom-color: #0c1618ff;
+    transition: font-weight 100ms ease-in, color 200ms ease-in;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 .125em -1px;
+}
+
+.app-tab-li:not(.active-tab):hover {
+    font-weight: 600;
+}
+
+.app-tab-li.active-tab {
+    border: 1px solid grey;
+    border-bottom: 1px solid white;
+    position: relative;
+    color: #007A74;
+    font-weight: 600;
+}
+
+.app-tab-li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    text-align: center;
+}
