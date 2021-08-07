@@ -1,11 +1,8 @@
 import base from '../app-module-base/app-module-base';
-import utils from '../utils/utils';
 import nav from './nav-bar/nav-bar';
 import panel from './tab-panel/tab-panel';
 
 class TabsModule extends base.AppModuleBase {
-  utils = utils;
-
   navBar;
 
   panel;
