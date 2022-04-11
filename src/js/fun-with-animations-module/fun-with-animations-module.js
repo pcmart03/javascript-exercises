@@ -70,11 +70,11 @@ class FunWithAnimationsModule extends base.AppModuleBase {
   }
 }
 
-function getFunWithanimationsModule(animations) {
+function getFunWithAnimationsModule(animations) {
   return new FunWithAnimationsModule(animations);
 }
 
 export default {
-  FunWithanimationsModule: FunWithAnimationsModule,
-  getFunWithAnimationsModule: getFunWithanimationsModule,
+  FunWithAnimationsModule,
+  getFunWithAnimationsModule,
 };
